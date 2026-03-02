@@ -22,4 +22,4 @@ This document describes how AI tools were used in completing this assignment.
 
 - AI was used as a coding assistant to accelerate implementation and structure the solution.
 - All design choices (model type, feature selection, preprocessing, tuning strategy) were made with human oversight and rationale.
-- The final model, methodology, and documentation were reviewed and refined by the student.
+- The final model, methodology, and documentation were reviewed and refined by me.
