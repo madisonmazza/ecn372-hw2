@@ -1,23 +1,4 @@
-# Online News Popularity Prediction (ECN372 HW2)
-
-This repository implements a predictive model for article popularity (number of shares) on the [Online News Popularity](https://archive.ics.uci.edu/ml/datasets/Online+News+Popularity) dataset from UCI. All code is in **R**.
-
-## Quick Start
-
-```bash
-# Install R dependency (one time)
-make install_deps
-# or from R: install.packages("xgboost", repos = "https://cloud.r-project.org")
-
-# Place test.csv in data/raw/ (provided at grading time), then:
-make evaluate
-```
-
-Acceptable output (only this line to stdout):
-
-```
-MSE: 1234.56
-```
+ECN372 HW2
 
 ## Environment
 
@@ -77,18 +58,6 @@ Hyperparameters are chosen via **5-fold cross-validation** on the training set:
    - Predict shares, compute MSE
    - Print `MSE: <value>` to stdout
 
-### 6. Replicability
-
-To run on a new machine with no extra guesswork:
-
-1. Clone the repo and `cd` into the project root.
-2. Install R (4.0+) if needed, then install the single dependency: `make install_deps` (or `install.packages("xgboost", repos = "https://cloud.r-project.org")` from R).
-3. Place `test.csv` in `data/raw/` (same structure as `train.csv`; grader provides this).
-4. From the project root, run: **`make evaluate`**.  
-   This loads (or trains) the model, reads `data/raw/test.csv`, computes predictions, and prints only the test MSE to stdout.
-
-Paths are relative to the project root; the Makefile and scripts assume you run from there. The process is deterministic (fixed `seed = 42` for XGBoost and for CV fold splits).
-
 ## Project Structure
 
 ```
@@ -108,15 +77,6 @@ ecn372-hw2-1/
 ├── README.md
 └── AI_USAGE.md
 ```
-
-## Makefile Targets
-
-| Target            | Description                                                                 |
-|-------------------|-----------------------------------------------------------------------------|
-| `make install_deps` | Install R package `xgboost`                                               |
-| `make train`        | Train model from `train.csv` and save to `model/`                         |
-| `make evaluate`      | Load model (or train if missing), predict on `test.csv`, print MSE to stdout |
-
 ## Model selection (visibility in code)
 
 The structured process—variable selection and cross-validation—is fully visible in the code:
