@@ -2,7 +2,7 @@ ECN372 HW2
 
 ## Environment
 
-- **R**: 4.0 or higher (standard installation from [CRAN](https://cran.r-project.org/) or your system package manager).
+- **R**: 4.0 or higher
 - **R package**: `xgboost` only. Install once via `make install_deps` or from R: `install.packages("xgboost", repos = "https://cloud.r-project.org")`.
 - No other dependencies; the repo uses only base R and `xgboost`.
 
