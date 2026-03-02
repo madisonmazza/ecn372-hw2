@@ -1,0 +1,14 @@
+# Model artifacts (trained on the fly if missing)
+model/
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj.user/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
