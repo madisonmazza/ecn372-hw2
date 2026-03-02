@@ -91,6 +91,6 @@ There is no separate “exploration” script; the same pipeline that produces t
 
 The final model is chosen to be competitive with a hidden baseline: we use a strong regression method (XGBoost), variable selection to reduce overfitting, and cross-validated tuning so the chosen hyperparameters generalize. Outperforming the baseline depends on test data; this setup is intended to give a good chance of doing so.
 
-## AI USAGE
+## AI Usage
 
 See AI_USAGE.md for documentation of all AI use. 
